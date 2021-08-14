@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img_calculator.png" type="image/png">
+		<script src="https://use.fontawesome.com/d0c490655e.js"></script>
+		<link rel="stylesheet" href="css/darkmode.css" id="page-link">
+		<title>Simple Calculator</title>
+	</head>
+	<body>
+		<!-- *********** App Body **************   -->
+		<div class="main-container">
+			<!-- *********** Display Section **************   -->
+			<header>
+				<h4><i class="fa fa-calculator"></i> Calculator</h4>
+				<div class="top-display"><span></span></div>
+				<div class="cont-bottom-display">
+					<input type="text" class ="bottom-display" value="" autofocus>
+				</div>
+			</header>
+			<main>
+				<!-- *********** Input Section **************   -->
+				<div class="cont-entry">
+					<div>
+						<button type="button" class="secondary clear-entry">CE</button>
+						<button type="button" class="secondary clear">C</button>
+						<button type="button" class="secondary delete">←</button>
+						<button type="button" class="secondary factorial">n!</button>
+						<button type="button" class="secondary sqrt">&radic;</button>
+					</div>
+					<div>
+						<button type="button" class="primary seven">7</button>
+						<button type="button" class="primary eight">8</button>
+						<button type="button" class="primary nine">9</button>
+						<button type="button" class="secondary division">/</button>
+						<button type="button" class="secondary any-sqrt"><sup>y</sup>&radic;x</button>
+					</div>
+					<div>
+						<button type="button" class="primary four">4</button>
+						<button type="button" class="primary five">5</button>
+						<button type="button" class="primary six">6</button>
+						<button type="button" class="secondary multiply">x</button>
+						<button type="button" class="secondary pi">π</button>
+					</div>
+					<div>
+						<button type="button" class="primary one">1</button>
+						<button type="button" class="primary two">2</button>
+						<button type="button" class="primary three">3</button>
+						<button type="button" class="secondary minus">&minus;</button>
+						<button type="button" class="secondary square">x<sup>2</sup></button>
+					</div>
+					<div>
+						<button type="button" class="primary dot">.</button>
+						<button type="button" class="primary zero">0</button>
+						<button type="button" class="primary equal">=</button>
+						<button type="button" class="secondary plus">+</button>
+						<button type="button" class="secondary any-square">x<sup>y</sup></button>
+					</div>
+				</div>
+			</main>
+			<!-- *********** Mode Switch - Dark or Light **************   -->
+			<footer>
+			
+				<div><span>Dark Mode</span> <button type="button" id="on">ON</button><button type="button" id="off">OFF</button></div>
+				<small>Designed by Omololu Jumat &copy;2021</small>
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

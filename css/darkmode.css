@@ -1,0 +1,206 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	width:100%;
+	height:100%;
+}
+body{
+	width:100%;
+	height:100%;
+	color:#F6A600;
+	padding:10px;
+	background-color:#211F1F;
+}
+/* ------------------------------- App Body -------------------------------- */
+.main-container{
+	background-color:black;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	width:100%;
+	height:100%;
+	border-radius:20px;
+	position:relative;
+}
+/* --------- Display Section ---------- */
+header{
+	display:flex;
+	flex-direction:column;
+	
+	justify-content:center;
+	width:100%;
+	height:20%;
+	font-family:'Century Gothic','Segoe UI',Helvetica,sans-serif;
+}
+header h4{
+	text-align:left;
+	padding-left:10px;
+}
+.top-display{
+	background-color: #0f0f0f;
+	width:100%;
+	height:35%;
+	color: #F6A600;
+	font-size:0.9rem;
+	padding:10px;
+	/* font-family:"Arial Black"; */
+	border-radius:10px 10px 0 0;;
+}
+.cont-bottom-display{
+	width:100%;
+	height:65%;
+}
+header input{
+	background-color: #0f0f0f;
+	width:100%;
+	overflow:hidden;
+	font-size: 1.1rem;
+	color: #F6A600;
+	text-align:right;
+	letter-spacing:2px;
+	outline:none;
+	border:none;
+	font-weight:bolder;
+	height:100%;
+	padding:10px;
+	padding-bottom: 0px;
+	/* font-family:"Arial Black"; */
+}
+/* --------- Input Section ---------- */
+main{
+	display:flex;
+	background-color:black;
+	flex-direction:column;
+	align-items:center;
+	color: #F6A600;
+	width:100%;
+	height:65%;
+}
+.cont-entry{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+}
+.cont-entry div{
+	display:flex;
+	width:100%;
+	height:20%;
+}
+.primary, .secondary{
+	height:100%;
+	width:20%;
+	color: #F6A600;
+	font-size:0.9rem;
+	font-weight:bolder;
+	background-color:#000;
+	border:none;
+	outline:none;
+	text-shadow:1px 0px 1px white;
+	transition:background-color 0.1s linear;
+}
+button:active{
+	background-color:rgba(256,256, 256, 0.3);
+}
+.secondary{
+	background-color: black;
+}
+.primary{
+	background-color:#080808;
+	color:white;
+	box-shadow:2px 2px 5px white;
+}
+/* --------- Mode Switch - Dark or Light ---------- */
+footer{
+	font-size:1.0rem;
+	background-color:#cd8500;
+	width:100%;
+	height:15%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	color:black;
+	font-family: BroadWay;
+	font-weight:bolder;
+	letter-spacing:2px;
+}
+
+footer small{
+	font-family:'Century Gothic','Segoe UI',Helvetica,sans-serif;
+	background-color:#FFA500;
+	font-size:0.6rem;
+	position:absolute;
+	bottom:0;
+	right:0
+}
+#on, #off{
+	background-color:#FFA500;
+	padding:7px;
+	margin-bottom:1px;
+	border-left:2px solid red;
+	cursor:pointer;
+	border-radius:5px;
+	font-weight:bolder;
+	box-shadow: 2px 2px 4px #000,  -2px -2px 4px #000;
+}
+#on{
+	margin-right:20px;
+	border-bottom: 4px solid blue;
+}
+/*
+***This style will be used when intra-mode switch is to be done on the app***
+.nw{
+	background-color:#fff;
+	color:#000;
+	text-shadow:1px 0px 1px black;
+	box-shadow:2px 2px 5px black;
+}
+.nn{
+	background-color:#fff;
+	color:#000;
+}
+*/
+
+/* ------------------------------- Media Queries ------------------------------ */
+
+/* --------- For Desktops, Laptops and other larger screens -------- */
+@media screen and (min-width: 767px){
+	.main-container{
+		max-width:900px;
+		margin:auto;
+	}
+	.top-display{
+		font-size:1.4rem;
+	}
+	header input{
+		font-size:1.6rem;
+	}
+	.primary, .secondary{
+		font-size:1.4rem;
+	}
+	footer{
+		font-size:1.5rem;
+	}
+}
+/* --------- For Ipads and Tablets -------- */
+@media screen and (max-width:768px) and (min-width:480px){
+	
+	.top-display{
+		font-size:1.1rem;
+	}
+	header input{
+		font-size:1.3rem;
+	}
+	.primary, .secondary{
+		font-size:1.1rem;
+	}
+	footer{
+		font-size:1.2rem;
+	}
+}
+
